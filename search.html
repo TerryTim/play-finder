@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+    <title>Search | PlayFinder</title>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"  />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+
+    <!-- Website's Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky background-header header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <h2 class="text-white">PlayFinder</h2>
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li>
+                  <a href="index.html"><i class="bi bi-house-fill lg-text-white"></i> Home</a>
+                </li>
+                <li>
+                  <a href="search.html" class="active"><i class="bi bi-search lg-text-white"></i> Search</a>
+                </li>
+                <li>
+                  <a href="popular.html"><i class="bi bi-bar-chart-fill lg-text-white"></i> Popular</a>
+                </li>
+                <li>
+                  <a href="new.html"><i class="bi bi-plus-square-fill lg-text-white"></i> New</a>
+                </li>
+                <li>
+                  <a href="contact.html"><i class="bi bi-person-lines-fill"></i> Contact Us</a>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Search</h3>
+          </div>
+          <div class="col-lg-12 align-self-center">
+            <div class="caption">
+              <div class="search-input">
+                <form id="search" action="result.html" method="get">
+                  <!-- Updated action and method -->
+                  <input
+                    type="text"
+                    placeholder="Name, Publisher or Developer"
+                    id="searchText"
+                    name="keyword"
+                  />
+                  <button type="submit">Search</button>
+                  <!-- Specify type="submit" to trigger form submission -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section categories">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              <h2>Game Categories</h2>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="mmorpg">
+              <h4>MMORPG</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="mmorpg">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="shooter">
+              <h4>Shooter</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="shooter">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="moba">
+              <h4>MOBA</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="moba">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="anime">
+              <h4>Anime</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="anime">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="battle-royale">
+              <h4>Battle Royale</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="battle-royale">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="strategy">
+              <h4>Strategy</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="strategy">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="fantasy">
+              <h4>Fantasy</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="fantasy">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="sci-fi">
+              <h4>Sci-Fi</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="sci-fi">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="card">
+              <h4>Card Games</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="card">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="racing">
+              <h4>Racing</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="racing">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="fighting">
+              <h4>Fighting</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="fighting">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="social">
+              <h4>Social</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="social">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="sports">
+              <h4>Sports</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="sports">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="sandbox">
+              <h4>Sandbox</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="sandbox">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="open-world">
+              <h4>Open World</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="open-world">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="zombie">
+              <h4>Zombie</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="zombie">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="survival">
+              <h4>Survival</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="survival">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="pixel">
+              <h4>Pixel</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="pixel">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="pvp">
+              <h4>PvP</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="pvp">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="pve">
+              <h4>PvE</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="pve">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="turn-based">
+              <h4>Turn Based</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="turn-based">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="first-person">
+              <h4>First Person View</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="first-person">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="third-person">
+              <h4>Third Person View</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="third-person">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="top-down">
+              <h4>Top Down View</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="top-down">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="3d">
+              <h4>3D Graphics</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="3d">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="2d">
+              <h4>2D Graphics</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="2d">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="tank">
+              <h4>Tank</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="tank">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="space">
+              <h4>Space</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link"data-category="space">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="sailing">
+              <h4>Sailing</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="sailing">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="side-scroller">
+              <h4>Side Scroller</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="side-scroller">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="superhero">
+              <h4>Superhero</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="superhero">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="item" id="permadeath">
+              <h4>Permadeath</h4>
+              <div class="thumb">
+                <a href="category.html" class="category-link" data-category="permadeath">
+                  <img src="" alt=""/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 PlayFinder. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="backToTopBtn" class="back-to-top-btn">
+      <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/fetch-search.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
+  </body>
+</html>
