@@ -22,6 +22,9 @@
 
 - [Free-To-Play Games Database API](https://www.freetogame.com/api-doc): Thank you for providing access to a vast collection of free-to-play games.
 
+## Live View
+- https://terrytim.github.io/play-finder/
+
 ---
 
 ![Home Page](screenshot/Home-Page.jpg)
