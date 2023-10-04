@@ -16,7 +16,6 @@
 - CSS3
 - Bootstrap 5
 - JavaScript
-- jQuery
 
 ## Acknowledgments
 
